@@ -1,0 +1,42 @@
+
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #CD2E57;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+	-fx-background-color: #800000;
+}
+
+.button:pressed {
+	-fx-background-color: #B90000;
+}
+
+.label {
+	-fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#subName {
+	 -fx-font-size: 16;
+}
+
+#subNo {
+	 -fx-font-size: 16;
+}
+
+#SubName:focused{
+     -fx-focus-color : red;
+ }
+ 
+#SubNo:focused{
+     -fx-focus-color : red;
+ }
+ 
+ 
+
+
+
+

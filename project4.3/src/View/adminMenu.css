@@ -1,0 +1,27 @@
+
+#btnMemberEnrol {
+	-fx-background-image:url(/img/memberEnrol.png);
+	
+}
+
+#btnMemberEnrol:hover {
+	-fx-background-image:url(/img/memberEnrol2.png);
+}
+
+#btnMemberEnrol:pressed {
+	-fx-background-image:url(/img/memberEnrol3.png);
+}
+
+
+#btnRegister {
+	-fx-background-image:url(/img/updateClasses.jpg);
+	
+}
+
+#btnRegister:hover {
+	-fx-background-image:url(/img/updateClasses2.jpg);
+}
+
+#btnRegister:pressed {
+	-fx-background-image:url(/img/updateClasses3.jpg);
+}

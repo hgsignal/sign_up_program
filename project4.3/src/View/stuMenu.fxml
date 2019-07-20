@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="160.0" prefWidth="400.0" stylesheets="@stuMenu.css" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.stuMenuController">
+   <children>
+      <Button fx:id="btnMemberInfor" layoutX="6.0" layoutY="20.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="125.0" />
+      <Button fx:id="btnSignupClasses" layoutX="138.0" layoutY="20.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="125.0" />
+      <Button fx:id="btnRecord" layoutX="270.0" layoutY="20.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="125.0" />
+      <Label layoutX="40.0" layoutY="120.0" text="내 정보" textFill="#cd2e57">
+         <font>
+            <Font name="Malgun Gothic Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="160.0" layoutY="120.0" text="수강신청" textFill="#cd2e57">
+         <font>
+            <Font name="Malgun Gothic Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="290.0" layoutY="120.0" text="수강성적" textFill="#cd2e57">
+         <font>
+            <Font name="Malgun Gothic Bold" size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

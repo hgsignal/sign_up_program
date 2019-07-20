@@ -1,0 +1,189 @@
+
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #800000;
+}
+
+.button:hover {
+	-fx-background-color: #CD2E57;
+}
+
+.button:pressed {
+	-fx-background-color: #B90000;
+}
+
+.label {
+	-fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 15.0;
+}
+
+.combo-box
+{
+    -fx-background-color: #CD2E57;
+}
+
+.combo-box:pressed
+{
+    -fx-background-color: #800000;
+}  
+   
+.combo-box .list-cell
+{
+	-fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 13;
+	-fx-text-fill: white;
+    -fx-background-color: #CD2E57;
+}    
+
+.combo-box .list-cell:hover
+{
+	-fx-background-color: #FAFAA0;
+	-fx-text-fill: #CD2E57;
+}
+
+.tab-pane .tab-header-area .tab-header-background { 
+	-fx-opacity: 0;
+} 
+
+.tab-pane { 
+	-fx-tab-min-width:90px;
+} 
+
+.tab{ 
+	-fx-background-insets: 0 1 0 1,0,0;
+} 
+
+.tab-pane .tab {
+	-fx-background-color: white;
+} 
+
+.tab-pane .tab:selected {
+	-fx-background-color: #CD2E57;
+} 
+
+.tab .tab-label { 
+	-fx-font-family: "Malgun Gothic";  
+	-fx-alignment: CENTER; 
+	-fx-text-fill: #CD2E57; 
+	-fx-font-size: 11pt; 
+	-fx-font-weight: bold;
+} 
+
+.tab:selected .tab-label { 
+	-fx-alignment: CENTER; 
+	-fx-text-fill: white;
+}
+
+
+.table-view {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: white;
+    -fx-table-header-border-color: white;
+    -fx-padding: 7;
+    -fx-font-family: "Malgun Gothic";
+    -fx-font-size: 10pt;
+    -fx-alignment: CENTER; 
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #CD2E57;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 25;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        #CD2E57
+        #CD2E57
+        derive(-fx-base, 60%)
+        #CD2E57;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #86A5FF;
+}
+
+
+
+#admissionText:focused{
+     -fx-focus-color : red;
+ }
+ 
+#stuNameText:focused{
+     -fx-focus-color : red;
+ }
+
+#stuDateOfBirthText:focused{
+     -fx-focus-color : red;
+ }
+  
+#studentIDText:focused{
+     -fx-focus-color : red;
+ }
+
+
+#joinCompanyText:focused{
+     -fx-focus-color : red;
+ }
+
+#staffNameText:focused{
+     -fx-focus-color : red;
+ }
+
+#staffDateOfBirthText:focused{
+     -fx-focus-color : red;
+ }
+
+#staffPhoneText:focused{
+     -fx-focus-color : red;
+ }
+
+#staffIDText:focused{
+     -fx-focus-color : red;
+ }
+ 
+#mainTextLabel {
+	-fx-text-fill: #800000;
+	-fx-font-size: 35.0;
+}
+
+
+
+#btnStudentSearch {
+	-fx-background-image:url(/img/btnStudentSearch.jpg);
+}
+
+#btnStudentSearch:hover {
+	-fx-background-image:url(/img/btnStudentSearch2.jpg);
+}
+
+#btnStudentSearch:pressed {
+	-fx-background-image:url(/img/btnStudentSearch3.jpg);
+}
+
+#btnStaffSearch {
+	-fx-background-image:url(/img/btnStudentSearch.jpg);
+}
+
+#btnStaffSearch:hover {
+	-fx-background-image:url(/img/btnStudentSearch2.jpg);
+}
+
+#btnStaffSearch:pressed {
+	-fx-background-image:url(/img/btnStudentSearch3.jpg);
+}

@@ -1,0 +1,157 @@
+
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #CD2E57;
+   
+}
+
+.button:hover {
+	-fx-background-color: #800000;
+}
+
+.button:pressed {
+	-fx-background-color: #B90000;
+}
+
+.label {
+	-fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-font-size: 16.0;
+}
+
+.combo-box
+{
+    -fx-background-color: #CD2E57;
+ 
+}   
+
+.combo-box:pressed
+{
+    -fx-background-color: #800000;
+}  
+
+.combo-box .list-cell
+{
+	-fx-font-family: "Malgun Gothic";
+	-fx-font-size: 14.0;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER; 
+	-fx-text-fill: #CD2E57;
+    -fx-background-color: white;
+}    
+
+.combo-box .list-cell:hover
+{
+	-fx-background-color: #FAFAA0;
+}
+
+.tab-pane .tab-header-area .tab-header-background { -fx-opacity: 0; } 
+.tab-pane { -fx-tab-min-width:90px; } 
+.tab{ -fx-background-insets: 0 1 0 1,0,0; } 
+.tab-pane .tab { -fx-background-color: white; } 
+.tab-pane .tab:selected { -fx-background-color: #CD2E57; } 
+
+.tab .tab-label {
+	-fx-font-family: "Malgun Gothic"; 
+	-fx-alignment: CENTER; 
+	-fx-text-fill: #CD2E57; 
+	-fx-font-size: 15px; 
+	-fx-font-weight: bold;
+} 
+
+.tab:selected .tab-label { 
+	-fx-alignment: CENTER; 
+	-fx-text-fill: white;
+}
+
+.table-view {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: white;
+    -fx-table-header-border-color: white;
+    -fx-padding: 5;
+    -fx-font-family: "Malgun Gothic";
+    -fx-font-size: 11pt;
+    -fx-alignment: CENTER; 
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #CD2E57;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 30;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        #CD2E57
+        #CD2E57
+        derive(-fx-base, 60%)
+        #CD2E57;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Malgun Gothic";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #86A5FF;
+}
+
+
+#StuNo {
+	-fx-text-fill: #CD2E57;
+    -fx-font-size: 20.0;
+}
+
+#StuName {
+	-fx-text-fill: #CD2E57;
+    -fx-font-size: 20.0;
+}
+
+#StuDept {
+	-fx-text-fill: #CD2E57;
+    -fx-font-size: 20.0;
+}
+
+#StuYear {
+	-fx-text-fill: #CD2E57;
+    -fx-font-size: 20.0;
+}
+
+#Score{
+	-fx-text-fill: #86A5FF;
+    -fx-font-size: 25.0;
+}
+
+#Count {
+	-fx-text-fill: #86A5FF;
+    -fx-font-size: 25.0;
+}
+
+#profNameText:focused{
+     -fx-focus-color : red;
+ }
+
+#classNameText:focused{
+     -fx-focus-color : red;
+ }
+ 
+#mainTextLabel {
+	-fx-text-fill: #800000;
+	-fx-font-size: 20.0;
+}
+
+#mainTextLabel2 {
+	-fx-background-color: #800000;
+	-fx-text-fill: white;
+	-fx-font-size: 20.0;
+}
+

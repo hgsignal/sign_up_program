@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="930.0" stylesheets="@stuRecord.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.stuRecordController">
+   <content>
+      <AnchorPane prefHeight="536.0" prefWidth="930.0">
+         <children>
+            <Label fx:id="mainTextLabel" layoutX="16.0" layoutY="4.0" text="수강성적 확인하기">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="583.0" layoutY="105.0" prefWidth="65.0" text="수강년도">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="65.0" prefWidth="65.0" text="성    명">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="353.0" layoutY="65.0" prefWidth="65.0" text="대    학">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="105.0" prefWidth="65.0" text="학적상태">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="583.0" layoutY="65.0" prefWidth="65.0" text="학    과">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="studentName" editable="false" layoutX="193.0" layoutY="55.0" prefWidth="140.0" style="-fx-alignment: CENTER;">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="studentClassYearText" layoutX="653.0" layoutY="105.0" prefWidth="145.0" promptText="수강한 년도 입력">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="studentCollege" editable="false" layoutX="418.0" layoutY="55.0" prefWidth="140.0" style="-fx-alignment: CENTER;">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="studentDepartment" editable="false" layoutX="653.0" layoutY="55.0" prefWidth="145.0" style="-fx-alignment: CENTER;">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="studentState" editable="false" layoutX="192.0" layoutY="105.0" prefWidth="140.0" style="-fx-alignment: CENTER;">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></TextField>
+            <TableView fx:id="recordListView" layoutX="10.0" layoutY="150.0" prefHeight="370.0" prefWidth="905.0">
+              <columns>
+                <TableColumn fx:id="colClassYear" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="강의년도" />
+                <TableColumn fx:id="colFinishDiv" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="이수구분" />
+                  <TableColumn fx:id="colYear" prefWidth="55.0" resizable="false" style="-fx-alignment: CENTER;" text="학년" />
+                  <TableColumn fx:id="colClassName" prefWidth="180.0" resizable="false" style="-fx-alignment: CENTER;" text="교과목명" />
+                  <TableColumn fx:id="colNumber" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="수강번호" />
+                  <TableColumn fx:id="colScore" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="이수학점" />
+                  <TableColumn fx:id="colProf" resizable="false" style="-fx-alignment: CENTER;" text="교수" />
+                  <TableColumn fx:id="colMidterm" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="중간성적" />
+                  <TableColumn fx:id="colFinals" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="기말성적" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnRecordCheck" layoutX="820.0" layoutY="104.0" mnemonicParsing="false" text="조회하기">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></Button>
+            <Label fx:id="mainTextLabel2" layoutX="602.0" layoutY="2.0" text="M E R E A    U N I V E R C I T Y" textFill="MAROON">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="353.0" layoutY="106.0" prefWidth="65.0" text="학    년">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="studentYear" editable="false" layoutX="418.0" layoutY="105.0" prefWidth="140.0" style="-fx-alignment: CENTER;">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

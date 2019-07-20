@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="400.0" style="-fx-background-color: white;" stylesheets="@signupWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="SubNo" editable="false" layoutX="108.0" layoutY="95.0" prefHeight="20.0" prefWidth="265.0">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font></TextField>
+            <Label layoutX="90.0" layoutY="10.0" text="수강신청을 하시겠습니까?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="subName" layoutX="30.0" layoutY="53.0" text="교과목명: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="subNo" layoutX="30.0" layoutY="93.0" text="수강번호: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="SubName" editable="false" layoutX="108.0" layoutY="45.0" prefHeight="20.0" prefWidth="265.0">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="15.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnSignup" layoutX="125.0" layoutY="19.0" mnemonicParsing="false" text="수강신청">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnCancel" layoutX="225.0" layoutY="19.0" mnemonicParsing="false" text="취소">
+               <font>
+                  <Font name="Malgun Gothic Bold" size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

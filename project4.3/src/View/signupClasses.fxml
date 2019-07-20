@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1400.0" style="-fx-background-color: white;" stylesheets="@signupClasses.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.signupClassController">
+	<children>
+		<TabPane layoutX="410.0" layoutY="8.0" prefHeight="635.0" prefWidth="975.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="수강편람">
+					<content>
+						<AnchorPane prefHeight="200.0" prefWidth="320.0">
+							<children>
+								<Label layoutX="138.0" layoutY="20.0" text="학년">
+									<font>
+										<Font size="13.0" />
+									</font>
+								</Label>
+								<Label layoutX="283.0" layoutY="20.0" text="이수구분">
+									<font>
+										<Font size="13.0" />
+									</font>
+								</Label>
+								<Label layoutX="494.0" layoutY="21.0" text="강의이름">
+									<font>
+										<Font size="13.0" />
+									</font>
+								</Label>
+								<TextField fx:id="classNameText" layoutX="564.0" layoutY="17.0" prefHeight="23.0" prefWidth="169.0">
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font></TextField>
+								<Label layoutX="750.0" layoutY="21.0" text="교수">
+									<font>
+										<Font size="13.0" />
+									</font>
+								</Label>
+								<TextField fx:id="profNameText" layoutX="788.0" layoutY="17.0" prefHeight="23.0" prefWidth="109.0">
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font></TextField>
+								<TableView fx:id="classListView" layoutX="10.0" layoutY="55.0" prefHeight="550.0" prefWidth="970.0">
+                           <columns>
+                              <TableColumn fx:id="colYearAll" prefWidth="65.0" resizable="false" style="-fx-alignment: CENTER;" text="학년" />
+                              <TableColumn fx:id="colNumberAll" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="수강번호" />
+                              <TableColumn fx:id="colClassNameAll" prefWidth="210.0" resizable="false" style="-fx-alignment: CENTER;" text="강의" />
+                              <TableColumn fx:id="colFinishDivAll" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="이수구분" />
+                              <TableColumn fx:id="colProfAll" resizable="false" style="-fx-alignment: CENTER;" text="교수" />
+                              <TableColumn fx:id="colPeopleAll" prefWidth="70.0" resizable="false" style="-fx-alignment: CENTER;" text="인원" />
+                              <TableColumn fx:id="colTime1All" prefWidth="70.0" resizable="false" style="-fx-alignment: CENTER;" text="시간1" />
+                              <TableColumn fx:id="colTime2All" prefWidth="70.0" resizable="false" style="-fx-alignment: CENTER;" text="시간2" />
+                              <TableColumn fx:id="colLocationAll" prefWidth="95.0" resizable="false" style="-fx-alignment: CENTER;" text="강의실" />
+                              <TableColumn fx:id="colScoreAll" prefWidth="60.0" resizable="false" style="-fx-alignment: CENTER;" text="학점" />
+                           </columns></TableView>
+								<Button fx:id="btnclassCheck" layoutX="906.0" layoutY="16.0" mnemonicParsing="false" text="확인">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="14.0" />
+                           </font></Button>
+								<ComboBox fx:id="comboYearValue" layoutX="178.0" layoutY="20.0" prefHeight="23.0" prefWidth="75.0" promptText="전체" />
+								<ComboBox fx:id="comboClassDivValue" layoutX="358.0" layoutY="20.0" prefHeight="23.0" prefWidth="120.0" promptText="전체" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="수강신청 목록">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="personalList" layoutX="10.0" layoutY="36.0" prefHeight="550.0" prefWidth="970.0">
+                           <columns>
+                              <TableColumn fx:id="colYear" prefWidth="65.0" resizable="false" style="-fx-alignment: CENTER;" text="학년" />
+                              <TableColumn fx:id="colNumber" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="수강번호" />
+                              <TableColumn fx:id="colClassName" prefWidth="210.0" resizable="false" style="-fx-alignment: CENTER;" text="강의" />
+                              <TableColumn fx:id="colFinishDiv" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="이수구분" />
+                              <TableColumn fx:id="colProf" resizable="false" style="-fx-alignment: CENTER;" text="교수" />
+                              <TableColumn fx:id="colPeople" prefWidth="60.0" resizable="false" style="-fx-alignment: CENTER;" text="인원" />
+                              <TableColumn fx:id="colTime1" prefWidth="70.0" resizable="false" style="-fx-alignment: CENTER;" text="시간1" />
+                              <TableColumn fx:id="colTime2" prefWidth="70.0" resizable="false" style="-fx-alignment: CENTER;" text="시간2" />
+                              <TableColumn fx:id="colLocation" prefWidth="95.0" resizable="false" style="-fx-alignment: CENTER;" text="강의실" />
+                              <TableColumn fx:id="colScore" prefWidth="60.0" resizable="false" style="-fx-alignment: CENTER;" text="학점" />
+                           </columns></TableView>
+								<Button fx:id="btnClassCheck2" layoutX="870.0" layoutY="-4.0" mnemonicParsing="false" text="조회하기">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="16.0" />
+                           </font></Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+		<ImageView fitHeight="71.0" fitWidth="297.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="img/mireLogoIcon.png" />
+			</image>
+		</ImageView>
+		<GridPane alignment="CENTER" layoutX="15.0" layoutY="120.0" prefHeight="182.0" prefWidth="253.0" style="-fx-border-color: #800000;">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="111.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="116.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label text="학번">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label text="이름" GridPane.rowIndex="1">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label text="학과" GridPane.rowIndex="2">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label text="학년" GridPane.rowIndex="3">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label text="신청학점" GridPane.rowIndex="4">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+            <Label text="신청과목수" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+				<Label fx:id="StuNo" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="StuName" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="StuDept" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="StuYear" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="Score" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+            <Label fx:id="Count" alignment="CENTER" contentDisplay="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+			</children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+		</GridPane>
+		<Label layoutX="17.0" layoutY="357.0" text="필수과목">
+			<font>
+				<Font size="15.0" />
+			</font>
+		</Label>
+		<TableView fx:id="indispensableClassList" layoutX="10.0" layoutY="384.0" prefHeight="180.0" prefWidth="380.0">
+         <columns>
+            <TableColumn fx:id="colProfIndi" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="교수" />
+          <TableColumn fx:id="colClassNameIndi" prefWidth="180.0" resizable="false" style="-fx-alignment: CENTER;" text="강의" />
+           <TableColumn fx:id="colNumberIndi" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="수강번호" />
+          <TableColumn fx:id="colScoreIndi" prefWidth="60.0" resizable="false" style="-fx-alignment: CENTER;" text="학점" />
+         </columns></TableView>
+		<Button fx:id="btnIndispensableClass" layoutX="299.0" layoutY="348.0" mnemonicParsing="false" text="조회하기">
+         <font>
+            <Font name="Malgun Gothic Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="mainTextLabel" layoutX="80.0" layoutY="20.0" text=" M E R A E   U N I V E R C I T Y " />
+      <Label fx:id="mainTextLabel2" layoutX="10.0" layoutY="610.0" text=" M E R A E   U N I V E R C I T Y " />
+	</children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="716.0" style="-fx-background-color: white;" stylesheets="@memberInfor.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" layoutX="40.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" width="663.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="134.0" layoutX="40.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="663.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="40.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="40.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="40.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="363.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="363.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="363.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Label alignment="TOP_LEFT" layoutX="410.0" layoutY="50.0" text="학번" textFill="#f8f3f3">
+         <font>
+            <Font name="Malgun Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainT" alignment="CENTER" layoutX="10.0" text="개인정보 수정" textFill="#cd2e57">
+         <font>
+            <Font name="Gulim" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="400.0" layoutY="95.0" text="핸드폰" textFill="#f8f3f3">
+         <font>
+            <Font name="Gulim" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="90.0" layoutY="50.0" text="이름" textFill="WHITE">
+         <font>
+            <Font name="Gulim" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="70.0" layoutY="95.0" text="생년월일" textFill="#f8f3f3">
+         <font>
+            <Font name="Gulim" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="410.0" layoutY="140.0" text="주소" textFill="#f8f3f3">
+         <font>
+            <Font name="Gulim" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="80.0" layoutY="140.0" text="e-mail" textFill="#f8f3f3">
+         <font>
+            <Font name="Gulim" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passT" alignment="CENTER" layoutX="10.0" layoutY="200.0" text="비밀번호 변경" textFill="#cd2e57">
+         <font>
+            <Font name="Gulim" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField id="editPassword" layoutX="187.0" layoutY="258.0" prefHeight="25.0" prefWidth="165.0">
+         <font>
+            <Font name="Malgun Gothic Bold" size="14.0" />
+         </font></PasswordField>
+      <PasswordField id="editPassword2" layoutX="510.0" layoutY="258.0" prefHeight="25.0" prefWidth="165.0">
+         <font>
+            <Font name="Malgun Gothic Bold" size="14.0" />
+         </font></PasswordField>
+      <TextField id="editEmail" layoutX="177.0" layoutY="138.0" prefHeight="25.0" prefWidth="180.0">
+         <font>
+            <Font name="Malgun Gothic" size="14.0" />
+         </font></TextField>
+      <TextField id="editAddress" layoutX="500.0" layoutY="138.0" prefHeight="25.0" prefWidth="195.0">
+         <font>
+            <Font name="Malgun Gothic" size="14.0" />
+         </font></TextField>
+      <TextField id="editPhone" layoutX="500.0" layoutY="95.0" prefHeight="25.0" prefWidth="195.0">
+         <font>
+            <Font name="Malgun Gothic" size="14.0" />
+         </font></TextField>
+      <Button id="editMember" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="310.0" mnemonicParsing="false" text="수정">
+         <font>
+            <Font name="Malgun Gothic Bold" size="18.0" />
+         </font></Button>
+      <Button id="editCencel" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="310.0" mnemonicParsing="false" text="취소">
+         <font>
+            <Font name="Malgun Gothic Bold" size="18.0" />
+         </font></Button>
+      <Label id="memberName" alignment="CENTER" layoutX="185.0" layoutY="52.0" prefHeight="30.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="memberBirth" alignment="CENTER" layoutX="185.0" layoutY="94.0" prefHeight="30.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="memberID" alignment="CENTER" layoutX="510.0" layoutY="52.0" prefHeight="30.0" prefWidth="170.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="103.0" layoutX="260.0" layoutY="88.0" startX="-90.0" />
+      <Line endX="103.0" layoutX="260.0" layoutY="131.0" startX="-90.0" />
+      <Line endX="103.0" layoutX="600.0" layoutY="87.0" startX="-107.0" />
+      <Line endX="103.0" layoutX="600.0" layoutY="131.0" startX="-107.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="40.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Label fx:id="passwordLabel1" alignment="CENTER" layoutX="55.0" layoutY="260.0" text="신규 비밀번호" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd2e57" height="45.0" layoutX="363.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+      <Label fx:id="passwordLabel2" alignment="CENTER" layoutX="380.0" layoutY="260.0" text="비밀번호 확인" textFill="WHITE">
+         <font>
+            <Font name="Malgun Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

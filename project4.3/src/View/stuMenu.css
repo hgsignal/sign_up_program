@@ -1,0 +1,44 @@
+
+#btnMemberInfor {
+	-fx-background-image:url(/img/studentInfor.png);
+	
+}
+
+#btnMemberInfor:hover {
+	-fx-background-image:url(/img/studentInfor2.png);
+}
+
+#btnMemberInfor:pressed {
+	-fx-background-image:url(/img/studentInfor3.png);
+}
+
+
+
+
+#btnSignupClasses {
+	-fx-background-image: url(/img/signupClass.png);
+	
+}
+
+#btnSignupClasses:hover {
+	-fx-background-image:url(/img/signupClass2.png);
+}
+
+#btnSignupClasses:pressed {
+	-fx-background-image:url(/img/signupClass3.png);
+}
+
+
+
+#btnRecord {
+	-fx-background-image:url(/img/studentRecord.png);
+	
+}
+
+#btnRecord:hover {
+	-fx-background-image:url(/img/studentRecord2.png);
+}
+
+#btnRecord:pressed {
+	-fx-background-image:url(/img/studentRecord3.png);
+}

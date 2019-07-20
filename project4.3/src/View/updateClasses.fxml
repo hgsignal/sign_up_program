@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="1260.0" stylesheets="@updateClasses.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.updateClassesController">
+   <children>
+      <Label fx:id="mainTextLabel" layoutX="14.0" layoutY="14.0" text="수강등록">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="20.0" layoutY="75.0" prefHeight="300.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="93.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="207.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <TextField fx:id="txtTime1" layoutY="10.0" prefHeight="23.0" prefWidth="50.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtTime2" layoutX="76.0" layoutY="10.0" prefHeight="23.0" prefWidth="50.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ComboBox fx:id="comboClassYear" layoutX="10.0" layoutY="7.0" prefWidth="120.0" promptText="개설학년" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="txtClassName" layoutY="7.0" prefWidth="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+                  <Button fx:id="btnClassNameSearch" layoutX="168.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="40.0" AnchorPane.topAnchor="-2.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="txtProfName" layoutX="10.0" layoutY="7.0" prefWidth="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <ComboBox fx:id="comboClassDiv" layoutY="37.0" prefWidth="120.0" promptText="교양/전공" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="txtClassPeople" layoutX="10.0" layoutY="5.0" prefWidth="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <TextField fx:id="txtClassLocation" layoutX="10.0" layoutY="4.0" prefWidth="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <ComboBox fx:id="comboClassScore" layoutY="3.0" prefWidth="120.0" promptText="1~3학점" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="2.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <children>
+                  <TextField fx:id="txtClassID" layoutX="10.0" layoutY="4.0" prefWidth="130.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="45.0">
+                     <font>
+                        <Font name="Malgun Gothic Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="30.0" layoutY="5.0" text="이수구분">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="60.0" layoutY="5.0" text="학년">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="30.0" layoutY="5.0" text="강의이름">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="60.0" layoutY="5.0" text="교수">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label layoutX="30.0" layoutY="5.0" text="수강인원">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+               <children>
+                  <Label layoutY="5.0" text="시간1 / 시간2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+               <children>
+                  <Label layoutX="45.0" layoutY="5.0" text="강의실">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+               <children>
+                  <Label layoutX="60.0" layoutY="5.0" text="학점">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8">
+               <children>
+                  <Label layoutX="30.0" layoutY="5.0" text="강의번호">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Button fx:id="btnClassEnrol" layoutX="190.0" layoutY="390.0" mnemonicParsing="false" text="등록">
+         <font>
+            <Font name="Malgun Gothic Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnClassDelete" layoutX="260.0" layoutY="390.0" mnemonicParsing="false" text="삭제">
+         <font>
+            <Font name="Malgun Gothic Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="classDataListView" layoutX="330.0" layoutY="30.0" prefHeight="400.0" prefWidth="935.0">
+        <columns>
+          <TableColumn fx:id="colClassYear" prefWidth="60.0" style="-fx-alignment: CENTER;" text="학년" />
+          <TableColumn fx:id="colClassID" prefWidth="120.0" style="-fx-alignment: CENTER;" text="수강번호" />
+            <TableColumn fx:id="colClassName" prefWidth="200.0" style="-fx-alignment: CENTER;" text="강의" />
+            <TableColumn fx:id="colProfName" style="-fx-alignment: CENTER;" text="교수" />
+            <TableColumn fx:id="colClassPeople" prefWidth="90.0" style="-fx-alignment: CENTER;" text="수강인원" />
+            <TableColumn fx:id="colTime1" prefWidth="70.0" style="-fx-alignment: CENTER;" text="시간1" />
+            <TableColumn fx:id="colTime2" prefWidth="70.0" style="-fx-alignment: CENTER;" text="시간2" />
+            <TableColumn fx:id="colClassLocation" prefWidth="90.0" style="-fx-alignment: CENTER;" text="강의실" />
+            <TableColumn fx:id="colClassScore" prefWidth="60.0" style="-fx-alignment: CENTER;" text="학점" />
+            <TableColumn fx:id="colClassDiv" prefWidth="90.0" style="-fx-alignment: CENTER;" text="이수구분" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnClassSearch" layoutX="90.0" layoutY="390.0" mnemonicParsing="false" text="전체조회">
+         <font>
+            <Font name="Malgun Gothic Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
